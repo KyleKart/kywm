@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Embedded KyWM Example</title>
+    <script src="kywm.js"></script>
+</head>
+<body>
+    <div id="kywmContent">
+        <kywm version="1.0">
+            <info title="My KyWM Website" description="A website." icon="path/to/image.jpg"/>
+            <main>
+                <txt.h1>Welcome to My Website</txt.h1>
+                <txt.p>This is a text paragraph.</txt.p>
+                <lnk.p href="kywps://somesite.kywm">This is a link paragraph.</lnk.p>
+            </main>
+        </kywm>
+    </div>
+
+    <script>
+        // Example usage
+        const kywmContent = document.getElementById('kywmContent');
+        const kywmCode = kywmContent.innerHTML.trim(); // Assuming KyWM code is directly embedded
+        const kywm = new KyWM(kywmCode);
+
+        // Convert KyWM to HTML and inject into the document
+        const htmlContent = kywm.toHTML();
+        document.body.innerHTML += htmlContent;
+    </script>
+</body>
+</html>
