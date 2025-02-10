@@ -4,6 +4,7 @@
             <txt.h1>Welcome to My Website</txt.h1>
             <txt.p>This is a text paragraph.</txt.p>
             <lnk.p href="https://example.com">This is a link paragraph.</lnk.p>
+            <txt.p>This is a <txt.p>nested experiment!</txt.p></txt.p>
         </main>
     </info>
 </kywm>
