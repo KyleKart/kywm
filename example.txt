@@ -1,9 +1,9 @@
 <kywm version="1.0">
     <info title="My KyWM Website" description="A website." icon="path/to/image.jpg">
         <main>
-            <txt.h1>Welcome to My Website</txt-h1>
-            <txt.p>This is a text paragraph.</txt-p>
-            <lnk.p href="https://example.com">This is a link paragraph.</lnk-p>
+            <txt.h1>Welcome to My Website</txt.h1>
+            <txt.p>This is a text paragraph.</txt.p>
+            <lnk.p href="https://example.com">This is a link paragraph.</lnk.p>
         </main>
     </info>
 </kywm>
